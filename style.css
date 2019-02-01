@@ -1,0 +1,376 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: 'AR CENA';
+    font-size: 1em;
+}
+header {
+
+}
+#banner img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+#banner:before,
+#banner:after {
+    position: absolute;
+    display: inline-block;
+    font-family: "FontAwesome";
+    content: "\f053";
+    padding-right: 3px;
+    padding-top: 2px;
+    box-sizing: border-box;
+    color: #FFF;
+    left: 20px;
+    top: 170px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 30px;
+    text-align: center;
+    background: #2c86ef90;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#banner:after {
+    content: "\f054";
+    right: 20px;
+    left: auto;
+    padding-right: 0;
+    padding-left: 5px;
+    padding-top: 2px;
+}
+#wrap-menu {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background: #238AE6;
+    margin-top: -4px;
+    border-top: solid 4px #1863a7;
+    box-shadow: 0 2px 5px #AAA;
+    z-index: 999;
+}
+#menu {
+    width: 1100px;
+    height: 40px;
+    margin: 0 auto;
+}
+#menu span {
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    font-weight: normal;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    text-shadow: 4px 0 0 #77777790;
+    cursor: default;
+}
+#menu ul {
+    display: inline-block;
+    margin: -10px 0 0 20px;
+    padding: 0;
+}
+#menu li {
+    top: -4px;
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+    border-right: solid 1px #DDD;
+    padding-right: 20px;
+}
+#menu li:first-child {
+    margin-left: 10px;
+}
+#menu li:last-child {
+    border: 0;
+}
+#menu li a:link,
+#menu li a:visited {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 16px;
+}
+#menu li a:hover {
+    color: #DDD;
+}
+#sejarah {
+    margin: 20px;
+}
+#sejarah,
+.konten1,
+.konten2,
+.konten3 {
+    position: relative;
+    margin: 0 auto;
+    width: 1100px;
+    min-height: 300px;
+    height: auto;
+    padding-bottom: 40px;
+}
+#sejarah .logo {
+    float: left;
+    margin: 0 10px 0 0;
+}
+#sejarah p {
+    text-align: justify;
+    margin: 0 0 10px 0;
+    line-height: 1.5;
+}
+#sejarah p::first-letter{
+    font-size: 22px;
+}
+#sejarah ul {
+    margin: 0;
+    padding: 0 0 0 18px;
+}
+#sejarah li {
+    margin-bottom: 5px;
+}
+#pendidikan {
+    width: 100%;
+    box-sizing: border-box;
+    background: #4999e0;
+}
+.konten1 h1,
+.konten2 h1,
+.konten3 h1 {
+    display: inline-block;
+    margin: 50px 0 0 0;
+    color: #FFF;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.konten1 hr,
+.konten2 hr,
+.konten3 hr {
+    height: 3px;
+    width: 45px;
+    background: #FFF;
+    border: 0;
+    margin: 0 0 20px 0;
+}
+.grid-3 {
+    background: #FFF;
+    display: inline-block;
+    margin-right: 4.5%;
+    margin-bottom: 40px;
+    width: 30%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+.grid-3.no {
+    margin-right: 0;
+}
+.grid-3 img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.grid-3 p {
+    margin: 5px 0;
+    text-align: center;
+    font-size: 17px;
+}
+.grid-3 p::first-letter {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+.konten2 h1 {
+    color: #222;
+}
+.konten2 hr {
+    background: #222;
+}
+.konten2 .grid-1 {
+    border-bottom: solid 1px #EEE;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+.konten2 .grid-1 img {
+    float: left;
+    width: 400px;
+    outline: 1px solid white;
+    outline-offset: -7px;
+    margin: 0 15px 10px 0;
+}
+.konten2 .grid-1 h2 {
+    margin: 0 0 10px;
+    font-weight: 700;
+}
+.konten2 .grid-1 p {
+    margin: 0 0 10px;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+#makanan {
+    background: #68bdd1;
+    height: 1040px;
+}
+.konten3 .grid-3 {
+    float: left;
+}
+.konten3 .grid-3:nth-child(3n) {
+    clear: left;
+}
+
+footer {
+    background: #3c3c3c;
+    height: 50px;
+}
+.wrap-footer {
+    position: relative;
+    margin: 0 auto;
+    width: 1100px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    line-height: 50px;
+    color: #999;
+    text-align: right;
+}
+
+@media only screen and (max-width: 1100px){
+    #menu {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        box-sizing: border-box;
+    }
+    #sejarah,
+    .konten1,
+    .konten2,
+    .konten3 {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        box-sizing: border-box;
+    }
+    .wrap-footer {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        box-sizing: border-box;
+    }
+}
+@media only screen and (max-width: 960px){
+    #banner:before,
+    #banner:after {
+        padding-top: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 20px;
+        font-size: 20px;
+    }
+    #sejarah,
+    .konten1,
+    .konten2,
+    .konten3 {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+    }
+    #makanan::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    #makanan {
+        overflow: auto;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    #wrap-menu {
+        background: rgba(10, 122, 222, 0.85);
+        box-shadow: 0 0 0;
+    }
+    #menu {
+        height: auto;
+        text-align: center;
+    }
+    #menu span {
+        display: block;
+    }
+    #menu ul {
+        margin: 10px 0 0 0;
+    }
+    #menu li {
+        top: -4px;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 762px){
+    .grid-3 {
+        background: #FFF;
+        display: inline-block;
+        margin-right: 5% !important;
+        margin-bottom: 40px;
+        width: 47% !important;
+        padding: 3px;
+        box-sizing: border-box;
+    }
+    .grid-3:nth-child(2n),
+    .grid-3.nop {
+        margin-right: 0 !important;
+    }
+    .grid-3.no {
+        margin-right: 5%;
+    }
+    .grid-3 img {
+        height: 150px;
+    }
+    #makanan {
+        height: auto;
+    }
+    .konten3 .grid-3 {
+        float: none;
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 540px){
+    #sejarah .logo {
+        float: none;
+        text-align: center;
+        display: block;
+        width: 20%;
+        margin: 15px auto 5px;
+    }
+    .konten2 .grid-1 img {
+        float: none;
+        display: block;
+        width: 100%;
+    }
+    #menu {
+        height: auto;
+        text-align: center;
+    }
+    #menu span {
+        display: block;
+    }
+    #menu ul {
+        margin: 10px 0 0 20px;
+    }
+    #menu li {
+        top: -4px;
+        margin-bottom: 20px;
+    }
+    #menu li:nth-child(3n) {
+        border-right: 0;
+    }
+    #menu li a:hover {
+        border-bottom: solid 2px #BBB;
+        padding-bottom: 3px;
+    }
+}
